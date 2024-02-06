@@ -19,8 +19,6 @@ pub use file::*;
 mod summary;
 pub use summary::*;
 
-use anyhow::Result;
-
 
 #[derive(Debug, PartialEq, Deserialize)]
 pub struct CoverageReport<'a> {
@@ -36,9 +34,8 @@ pub struct CoverageReport<'a> {
 
 impl<'a> CoverageReport<'a> {
 
-    pub fn from_str(s: &str) -> Result<CoverageReport> {
+    pub fn from_str(s: &str) -> Result<CoverageReport, serde_json::Error> {
         Ok(serde_json::from_str(s)?)
-
     }
 
 }
