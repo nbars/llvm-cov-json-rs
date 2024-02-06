@@ -10,7 +10,7 @@ For more details on LLVM's source code-based coverage, see [here](https://clang.
 
 ## Example
 
-```rs
+```rust
 use std::fs;
 use llvm_cov_json::{CoverageReport};
 
