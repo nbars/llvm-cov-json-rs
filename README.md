@@ -1,12 +1,22 @@
 # llvm-cov-json-rs
+
 This library can parse `llvm-cov` reports exported as JSON.
 Such JSON exports are typically created by using the following command:
+
 ```bash
 # Dump JSON export to stdout.
 llvm-cov export --format=text --instr-profile <profile-data>
 ```
 
 For more details on LLVM's source code-based coverage, see [here](https://clang.llvm.org/docs/SourceBasedCodeCoverage.html).
+
+For Rust projects, they can be created using [cargo-llvm-cov](https://github.com/taiki-e/cargo-llvm-cov) using the following command:
+
+```bash
+cargo llvm-cov test
+# Dump JSON export to stdout.
+cargo llvm-cov report --json
+```
 
 ## Example
 
