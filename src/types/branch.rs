@@ -11,11 +11,11 @@ use crate::RegionKind;
 pub struct Branch {
     /// Source line this branch condition starts.
     pub line_start: u64,
-    ///  Colum of `line_start` this branch starts.
+    ///  Column of `line_start` this branch starts.
     pub column_start: u64,
     /// Source line where the branch ends.
     pub line_end: u64,
-    /// Colum of `line_end` where the branch ends.
+    /// Column of `line_end` where the branch ends.
     pub column_end: u64,
     /// Number of times the true branch was taken.
     pub execution_count: u64,

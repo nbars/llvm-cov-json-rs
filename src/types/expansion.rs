@@ -6,7 +6,7 @@ use crate::{Branch, Region};
 #[derive(Debug, PartialEq, Deserialize)]
 pub struct Expansion<'a> {
     #[serde(borrow)]
-    /// Vector that is references via index by the branches, source_region and target_regions attrbiute
+    /// Vector that is references via index by the branches, source_region and target_regions attribute
     /// in order to refer to a specific file.
     pub filenames: Vec<&'a str>,
     /// All branches in this expansion.
