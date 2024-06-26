@@ -6,7 +6,7 @@ use crate::{Branch, Region};
 /// Metrics relate to one specific function.
 #[derive(Debug, PartialEq, Deserialize)]
 pub struct FunctionMetrics<'a> {
-    /// Absolute file pathes indexed via the file ids in `branches` and `regions` attrbiute.
+    /// Absolute file paths indexed via the file ids in `branches` and `regions` attribute.
     pub filenames: Vec<&'a str>,
     /// Source code level branches in this function. File ids of the branches are indices into
     /// the `filenames` array.
