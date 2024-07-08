@@ -3,7 +3,7 @@ name = "llvm-cov-json"
 license = "AGPL-3.0-only"
 description = "A library capable of parsing llvm-cov JSON exports."
 authors = ["Nils Bars <nils_bars@t-online.de>"]
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 repository = "https://github.com/nbars/llvm-cov-json-rs"
 
