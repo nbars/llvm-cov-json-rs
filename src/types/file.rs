@@ -4,8 +4,6 @@ use crate::{Branch, Expansion};
 
 use super::Summary;
 
-//dict_keys(['branches', 'expansions', 'filename', 'segments', 'summary'])
-
 /// Summary of the regions metric.
 #[derive(Debug, PartialEq, Deserialize)]
 pub struct FileMetrics<'a> {
